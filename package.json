@@ -1,0 +1,26 @@
+{
+  "name": "bootcampproject",
+  "version": "1.0.0",
+  "description": "An online food ordering platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metorola/bootcamp-project.git"
+  },
+  "keywords": [
+    "online",
+    "food"
+  ],
+  "author": "Mayowa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metorola/bootcamp-project/issues"
+  },
+  "homepage": "https://github.com/metorola/bootcamp-project#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

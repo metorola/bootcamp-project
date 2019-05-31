@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>CLASSIC BUKA</title>
+    <style>
+      .centered-div {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(186, 211, 223, 0.493);    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;      
+    margin: auto;
+    text-align: center;
+  }
+  .below-div {
+    width: 100%;
+    height: 30%;
+    background-color: rgba(240, 230, 230, 0);   
+    position: absolute;
+    top: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;      
+    margin: auto;
+    text-align: center;
+    padding: 10%
+}
+
+    </style>
+  </head>
+  <body background="images/backgroundimg.jpg">
+    <h1>Classic Buka</h1>
+    <h2>Welcome!</h2>
+    <h3>Get your food here!</h3>
+    <div class="centered-div">
+      <main>
+        <p>May we know you please: </p>
+        <form action="http://localhost:3000/user" method="POST">
+          <input id="firstName" type="text" placeholder="First Name" required>
+          <input id="lastname" type="text" placeholder="Last Name" required>
+          <input id="email" type="email" placeholder="Your email address" required>
+          <input id="pnumber" type="tel" placeholder="Phone number" required>
+          <input id="city" type="text" placeholder="Your city" required>
+          <input id="lga" type="text" placeholder="Local Government Area" required><br>
+          <input id="add" type="text" placeholder="Delivery Address" required><br>
+          <p align="left">And tell us what you would like:</p>
+          <table border="0" cellpadding="0" width="550" id="table2">
+                <tr>
+                <td width="250" height="31"><b>Choose Your Meal</b></td>
+                <td align="center" width="100" height="31"><b>Quantity</b></td>
+                <td align="right" height="31" width="60"><b>Price </b></td>
+                <td align="right" height="31" width="140"><b>Total</b></td>
+                </tr>
+                <tr>
+                <td width="250">Beef Burger &  French Fries</td>
+                <td align="center" width="100">
+                <input type="text" id="qtyA" size="5" tabindex="5"></td>
+                <td align="right" width="60">1500</td>
+                <td align="right" width="140">
+                <input type="text" id="totalA" size="12" tabindex="99"></td>
+                </tr>
+                <tr>
+                <td width="250">Waffles, Sausage & Egg</td>
+                <td align="center" width="100">
+                <input type="text" id="qtyB" size="5" tabindex="5"></td>
+                <td align="right" width="60">1200</td>
+                <td align="right" width="140">
+                <input type="text" id="totalB" size="12" tabindex="99"></td>
+                </tr>
+                <tr>
+                <td width="250">Stir-fry noodles & chicken</td>
+                <td align="center" width="100">
+                <input type="text" id="qtyC" size="5" tabindex="5"></td>
+                <td align="right" width="60">2000</td>
+                <td align="right" width="140">
+                <input type="text" id="totalC" size="12" tabindex="99"></td>
+                </tr>
+                <tr>
+                <td width="250">&nbsp;</td>
+                <td align="center" width="100">&nbsp;</td>
+                <td align="right" width="60">&nbsp;</td>
+                <td align="right" width="140">&nbsp;</td>
+                </tr>
+                <tr>
+                <td width="250">
+                <p align="right"><b>TOTALS:</b></td>
+                <td align="center" width="100">&nbsp;</td>
+                <td align="right" width="60">&nbsp;</td>
+                <td align="right" width="140">
+                <input type="text" id="GrandTotal" size="15" tabindex="99"></td>
+                </tr>
+                <tr>
+                <td width="250">&nbsp;</td>
+                <td align="center" width="100">&nbsp;</td>
+                <td align="right" width="60">&nbsp;</td>
+                <td align="right" width="140">&nbsp;</td>
+                </tr>
+                </table>
+                <table border="0" cellpadding="0" width="550" id="table3">
+                    <tr>
+                    <td width="563">
+                    <p align="center">
+                    <input type="submit" value="Submit" id="subButton" tabindex="50">&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <input type="reset" value="Reset" id="resetButton" tabindex="50"></td>
+                    </tr>
+                    </table>
+        </form>
+      </main>
+    </div>
+    <div class="below-div">
+        <main>
+          <p>You can know the status of your order here:</p>
+          <form action="http://localhost:3000/order" method="GET">
+            <input id="orderId" type="number" placeholder="Order number">
+            <button type="submit">Track you order</button>
+          </form>
+        </main>
+      </div>
+      <script src="index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

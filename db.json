@@ -1,0 +1,65 @@
+{
+    "user":[
+        {
+            "userid": 1,
+            "first name": "Mayo",
+            "last name": "Orola",
+            "email": "morola@gmail.com",
+            "phone number": 2347038212578,
+            "city": "Lagos",
+            "lga": "Lagos Island",
+            "delivery address": "2 Banana Island"
+        },
+        {
+            "userid": 2,
+            "first name": "Mike",
+            "last name": "Elisheri",
+            "email": "melisry@gmail.com",
+            "phone number": 2347039757310,
+            "city": "Lagos",
+            "lga": "Eti Osa",
+            "delivery address": "17 Chevron drive"
+        }
+    ],
+    "menu": [
+        {
+            "menuId": 1,
+            "foodname": "Beef Burger &  French Fries",
+            "price": 1500
+        },
+        {
+            "menuId": 2,
+            "foodname": "Waffles, Sausage & Egg",
+            "price": 1200
+        },
+        {
+            "menuId": 3,
+            "foodname": "Stir-fry noodles & chicken",
+            "price": 2000
+        }
+    ],
+    "order": [
+        {
+            "orderId": 1,
+            "customer": {
+                "userid": 1,
+                "first name":"Mayo",
+                "phone number":2347038212578
+            },
+            "menuId": {"3":1},
+            "total cost": 1200,
+            "status": "Packaging/In transit/Delivered"
+        },
+        {
+            "orderId": 2,
+            "customer": {
+                "userid": 2,
+                "first name":"Mike",
+                "phone number":2347039757310
+            },
+            "menuId": {"1":1},
+            "total cost": 1500,
+            "status": "Packaging/In transit/Delivered"
+        }
+    ]
+}
