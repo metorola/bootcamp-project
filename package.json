@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/metorola/bootcamp-project#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
